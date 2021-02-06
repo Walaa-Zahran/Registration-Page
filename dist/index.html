@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login Page - Nagwa Co</title>
+    <link rel="stylesheet" href="../dist/css/styles.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <main class="right-content">
+        <figure>
+          <img src="../dist/images/logo.png" alt="Yousef Alsharif" />
+          <figcaption>يوسف الشريف<br /><span>مدرس رياضيات</span></figcaption>
+        </figure>
+        <p>
+          مدرس أول رياضيات حاصل على بكالوريوس تربية من جامعة عين شمس وحاصل على
+          ماجستير الرياضيات من جامعة كامبريدج البريطانية وعضو الجمعية العمومية
+          لعلوم الرياضيات في جامعة القاهرة.
+        </p>
+        <div class="social">
+          <img src="../dist/images/facebook.png" alt="facebook" />
+          <img src="../dist/images/twitter.png" alt="twitter" />
+          <img src="../dist/images/youtube.png" alt="youtube" />
+        </div>
+      </main>
+
+      <!-- Replace <div> with <aside> if your content has one aside. For more than one, nest <aside> elements in the <div>. -->
+      <div class="left-content">
+        <h2>تسجيل الدخول</h2>
+        <form action="#">
+          <div class="row">
+            <div class="col-50">
+              <input
+                type="text"
+                id="uname"
+                name="username"
+                class="input"
+                placeholder="اسم المستخدم"
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-50">
+              <input
+                type="password"
+                id="password"
+                class="input"
+                name="pass"
+                placeholder="كلمة المرور"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <input type="submit" value="تسجيل دخول" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>
+        حقوق الطبع والنشر &copy; ٢٠٢٠ يوسف الشريف<br />
+        جميع الحقوق محفوظة
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "loginpage",
+  "version": "1.0.0",
+  "description": "login page for nagwa company",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error:no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Walaa-Zahran/ResponsiveLoginPage.git"
+  },
+  "keywords": [
+    "Nagwa",
+    "Login"
+  ],
+  "author": "Walaa Zahran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Walaa-Zahran/ResponsiveLoginPage/issues"
+  },
+  "homepage": "https://github.com/Walaa-Zahran/ResponsiveLoginPage#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-image": "^6.2.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}

@@ -1,0 +1,131 @@
+/* Sections of Layout
+-------------------------------------- */
+/* I named it .grid-container to make it more clear to you which part of the page uses CSS Grid and which doesn't. As usual, the class name could be whatever you like. */
+/* Generic styles for demo purposes
+-------------------------------------- */
+/* Typically, you wouldn't specify a height or min-height on these, instead allowing your actual content (i.e., text, images, etc.) to dictate the height of your content area and sidebar. But since this example has very minimal content, I've set a min-height to mimic a taller page. */
+@font-face {
+  font-family: Droid;
+  src: url(../fonts/Droid-Naskh-Regular.ttf); }
+
+@font-face {
+  font-family: GS;
+  src: url(../fonts/GE-SS-Two-Medium.otf); }
+
+* {
+  box-sizing: border-box; }
+  * body {
+    margin: 0;
+    height: auto; }
+  * .grid-container img {
+    max-width: 100%;
+    height: auto; }
+  * .grid-container .left-content {
+    background-color: #20639c;
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    /* Style the submit button */
+    /* Floating column for inputs: 75% width */
+    /* Clear floats after the columns */
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */ }
+    * .grid-container .left-content .row {
+      width: 40vw;
+      display: flex;
+      justify-content: center; }
+    * .grid-container .left-content .input {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #9fbed8;
+      border-radius: 4px;
+      color: #fff;
+      background: transparent;
+      resize: vertical; }
+    * .grid-container .left-content .input::placeholder {
+      color: #fff;
+      font-family: Droid; }
+    * .grid-container .left-content input[type="submit"] {
+      background-color: transparent;
+      border-color: #f7d65c;
+      border-radius: 20px;
+      border: 1px solid #f7d65c;
+      color: #f7d65c;
+      padding: 5px 5px;
+      cursor: pointer;
+      float: right;
+      margin-top: 10px;
+      width: 80%;
+      font-family: GS; }
+    * .grid-container .left-content .col-50 {
+      float: right;
+      width: 100%;
+      margin-top: 6px; }
+    * .grid-container .left-content .row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    * .grid-container .left-content h2 {
+      font-size: 28px;
+      color: #fff;
+      font-weight: 500;
+      font-family: GS; }
+    @media screen and (max-width: 600px) {
+      * .grid-container .left-content .input,
+      * .grid-container .left-content .col-50,
+      * .grid-container .left-content input[type="submit"] {
+        width: 100%;
+        margin-top: 10px; } }
+  * .grid-container .right-content {
+    background-color: #f7d65c;
+    padding: 1em;
+    min-height: 90vh;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column; }
+  * .grid-container figcaption {
+    font-family: GS;
+    font-weight: 500;
+    font-size: 30px;
+    color: #20639c; }
+    * .grid-container figcaption span {
+      font-size: 16px;
+      color: #333333; }
+  * .grid-container p {
+    font-family: Droid;
+    color: #333333;
+    font-weight: 400;
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto; }
+  * .grid-container .social img {
+    margin-left: 20px; }
+
+.footer {
+  background-color: #ffffff;
+  min-height: 10vh;
+  display: table;
+  color: #333333;
+  font-size: 16px; }
+  .footer p {
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100vw;
+    font-family: Droid;
+    }
+
+@media screen and (min-width: 48em) {
+  .grid-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr; } }
